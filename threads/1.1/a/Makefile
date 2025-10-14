@@ -1,9 +1,9 @@
-TARGET = thread-example
+TARGET = thread
 SRCS = thread.c
 
 CC=gcc
 RM=rm
-CFLAGS= -g -Wall
+CFLAGS= -g -fsanitize=address -fsanitize=leak -Wall -Wextra -Werror
 LIBS=-lpthread
 INCLUDE_DIR="."
 
