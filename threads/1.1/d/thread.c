@@ -34,7 +34,7 @@ void *mythread(void* arg) {
     printf("Local_static = %d, address = %p\n", local_static, (void *)&local_static);
     printf("Local_const = %d, address = %p\n", local_const, (void *)&local_const);
     printf("Global_var = %d, address = %p\n\n", global_variable, (void *)&global_variable);
-
+	sleep(10);
 	return NULL;
 }
 
